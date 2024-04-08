@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project28</title>
+</head>
+<body>
+    <h1>javascript questions</h1>
+<h2>question1</h2>
+       <script>
+          function largernumber(num1,num2){
+            if(num1>num2){
+                return num1;
+
+            }
+            else{
+                return  num2;
+            }
+
+          }
+          console.log(largernumber(5,10));
+       </script>
+       <br><br>
+       <h2>question2</h2>
+       <script>
+        function checksign(num){
+            if(num>0){
+                return positive;
+            
+             } else if (num<0){
+                    return negitive;
+                }
+            
+            else{
+                return zero;
+            }
+
+
+        }
+        console.log(checksign(5));
+        console.log(checksign(-3));
+        console.log(checksign(0));
+       </script>
+       <br><br>
+       <script>
+        function sumEvennumbers(){
+
+        }
+       </script>
+       <br><br>
+       <script>
+        function sumEvennumbers(n){
+            let sum=0;
+            for(i=1;i<=n;i++){
+                if(i%2===0){
+                    sum+=1;
+                }
+            }
+            return sum;
+
+        }
+        console.log(sumEvennumbers(10));
+        console.log(sumEvennumbers(15));
+       </script>
+       <br><br>
+
+</body><script>
+    function calculateArea(radius){
+        const pi=Math.PI;
+        const area =pi*radius*radius;
+        return area;
+    }
+    console.log(calculateArea(5));
+    console.log(calculateArea(10));
+</script>
+<br><br>
+<script>
+    const isprime=function(num){
+        if(num<=1);{
+            return false;
+        }
+        for(let i=1; i<=Math.sqrt(num); i++);{
+        if(num % i===0);{
+            return false;
+        }
+    }
+    return true;
+    }
+    console.log(isprime(7));
+    console.log(isprime(11));
+    console.log(isprime(15));
+</script>
+<br><br>
+<script>
+    let fruits=["apple","banna","orange"];
+    fruits =push("grape");
+    console.log(fruits);
+</script>
+<br><br>
+<script>
+    let person={
+        name:"john",
+        age:30,
+        city:"newyork"
+    };
+    console.log(person.name);
+</script>
+<br><br>
+<script>
+    let student=[
+        {name:"saravanan",grade:"A"},
+        {name:"kali",grade:"A"},
+        {name:"gokul",grade:"B"},
+        {name:"praveen",grade:"O"}
+
+    ];
+    console.log(student[A].grade);
+</script>
+<br><br>
+<p id="demo" style="display: none;">hello world</p>
+<button type="button" onclick="open()">explore</button>
+<button type="button" onclick="open1()">close</button>
+<script>
+    function open(){
+        document.getElementById("demo").style.display="block"
+        
+    }
+    function open1(){
+        document.getElementById("demo").style.display="none"
+    }
+    
+</script>
+<br><br>
+<script>
+    
+const examples = document.querySelectorAll('.example');
+
+
+examples.forEach(example => {
+    example.style.backgroundColor = 'yellow';
+});
+
+</script>
+<br><br>
+<script>
+    const container = document.getElementById("container");
+
+
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "New Paragraph";
+
+
+container.appendChild(newParagraph);
+</script>
+<br><br>
+<script>
+    const elementToRemove = document.getElementById("removeMe");
+
+
+if (elementToRemove) {
+  
+  elementToRemove.remove();
+} else {
+  console.log("Element with id 'removeMe' not found.");
+}
+</script>
+<br><br>
+<script>
+    const myButton = document.getElementById("myButton");
+
+
+myButton.addEventListener("click", function() {
+  alert("Button clicked!");
+});
+</script>
+<br><br>
+<script>
+    const names = "Alice";
+const ages = 30;
+
+const message = `Hello, my name is ${name} and I am ${age} years old.`;
+console.log(message);
+</script>
+<br><br>
+<script>
+    const person1 = {
+  name: "Alice",
+  age: 30
+};
+
+
+const { name, age } = person;
+
+console.log(age); 
+</script>
+<br><br>
+<script>
+    function Animal(name) {
+  this.name = name;
+}
+
+
+Animal.prototype.sound = function() {
+  console.log("Animal sound");
+};
+
+
+function Dog(name, breed) {
+  Animal.call(this, name); 
+  this.breed = breed;
+}
+
+
+Dog.prototype = Object.create(Animal.prototype);
+
+
+Dog.prototype.bark = function() {
+  console.log("Bark!");
+};
+
+
+const myDog = new Dog("Buddy", "Labrador");
+
+
+console.log(myDog.name); 
+console.log(myDog.breed); 
+myDog.sound(); 
+myDog.bark(); 
+</script>
+<br><br>
+<script>
+    
+</script>
+</html>
